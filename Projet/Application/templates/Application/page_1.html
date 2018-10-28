@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}CLAUDIU T BO <3{% endblock %}
+
+{% block menu %}
+<ul class="menu__container">
+  <li class="menu__item"><a href="{% url 'welcome' %}" class="menu__link">Accueil</a></li>
+  <li class="menu__item"><a href="{% url 'page_1' %}" class="menu__link is-active">Page 1</a></li>
+  <li class="menu__item"><a href="{% url 'contact' %}" class="menu__link">Contact</a></li>
+</ul>
+{% endblock %}
+
+{% block content %}
+<section class="section section--first">
+  <h1 class="section__title">Baby Driver</h1>
+  <p class="section__text">Baby, a music-loving orphan also happens to be the prodigiously talented go-to getaway driver for heist mastermind Doc. With the perfect soundtrack picked out for each and every job, Baby ensures Doc's violent, bank-robbing cronies including Buddy, Bats and Darling, get in and out of Dodge before it's too late.</p>
+  <p class="section__text">He's not in it for the long haul though, hoping to nail one last job before riding off into the sunset with beautiful diner waitress Debora. Easier said than done.</p>
+</section>
+{% endblock %}

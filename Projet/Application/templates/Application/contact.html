@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}CLAUDIU 4EVER <3{% endblock %}
+
+{% block menu %}
+<ul class="menu__container">
+  <li class="menu__item"><a href="{% url 'welcome' %}" class="menu__link">Accueil</a></li>
+  <li class="menu__item"><a href="{% url 'page_1' %}" class="menu__link">Page 1</a></li>
+  <li class="menu__item"><a href="{% url 'contact' %}" class="menu__link is-active">Contact</a></li>
+</ul>
+{% endblock %}
+
+{% block content %}
+<section class="section section--form">
+  <h1 class="form__title">Add a quote</h1>
+  <form class="form" action="">
+    <input class="form__input" type="text" placeholder="Who are you ?">
+    <input class="form__input" type="text" placeholder="Who said that ?">
+    <textarea class="form__text" name="quote" id=""  placeholder="What is the quote" cols="30" rows="10"></textarea>
+    <input class="form__submit" type="submit" value="Submit your quote">
+  </form>
+</section>
+{% endblock %}
