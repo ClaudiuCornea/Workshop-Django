@@ -43,9 +43,6 @@ const json = {
 }
 
 
-
-
-
 let jsonResponse = json;
 randomQuote(jsonResponse)
 
